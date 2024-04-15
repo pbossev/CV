@@ -1,0 +1,182 @@
+\documentclass[letterpaper,9pt]{article}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{fontawesome}
+
+\hypersetup{
+    colorlinks=true,
+    urlcolor={black}
+}
+
+\fancyhf{}
+
+\addtolength{\oddsidemargin}{-0.50in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1in}
+
+\newcommand{\cvSubItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\cvFour}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\cvThree}[3]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textit{\small #2} \\
+      \textit{\small #3} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\cvTwo}[2]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\cvItem}[1]{
+  \item{
+    #1
+  }
+  \vspace{-5pt}
+}
+
+\newcommand{\cvHeading}[2]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$} % bullet lists
+
+\newcommand{\cvBodyStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\cvBodyEnd}{\end{itemize}}
+\newcommand{\cvListStart}{\begin{itemize}}
+\newcommand{\cvListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\cvRegListStart}{\begin{itemize}[leftmargin=0.22in, label={}]}
+\newcommand{\cvRegListEnd}{\end{itemize}}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-6pt}\scshape\raggedright\large\color{black}
+}{}{0em}{}[\color{black}\titlerule]
+
+\begin{document}
+
+\begin{center}
+	\textbf{{\huge \color{black} Peter Bossev}}\\ \vspace{10pt}
+    \small
+    \faLink \hspace{.5pt} \href{https://pbossev.pages.dev}
+    {https://pbossev.pages.dev}
+    \large $\Vert$ \small
+    \faMobile \hspace{.5pt} \href{tel:18127786957}
+    {+1 812 778 6957}
+    \large $\Vert$ \small
+    \faAt \hspace{.5pt} \href{mailto:peterbossev@gmail.com}
+    {peterbossev@gmail.com}
+    \large $\Vert$ \small
+    %\faLinkedinSquare \hspace{.5pt} %\href{https://www.linkedin.com/in/peterbossev}
+    %{peterbossev}
+    %\large $\Vert$ \small
+    %\faGithub \hspace{.5pt} \href{https://github.com/pbossev}
+    %{pbossev}
+    %\large $\Vert$ \small
+    \faGlobe \hspace{.5pt}
+    \href{https://north.mccsc.edu/}{Bloomington High School North '26}
+\end{center}
+
+\section{Education}
+\cvBodyStart
+    \cvFour{\href{https://north.mccsc.edu/}{Bloomington High School North} (BHSN)}{\href{https://www.google.com/maps/place/Bloomington,+IN}{Bloomington, IN}}
+      {\textbf{GPA: 3.99/4.00, Weighted: 4.38/5.00, Ranking: 3/405}}{Aug 2022 \textbf{--} Present}
+       \cvListStart
+             \cvSubItem{Current \textbf{Sophomore}, \textbf{skipped} 8th grade}
+             \cvSubItem{\textbf{Relevant Completed Coursework:} Physics Honors (introductory algebra-based physics), Introduction to Informatics Honors (4 credit hours for \textbf{INFO-I 101} at IU), Computer Repair and Maintenance}
+             \cvSubItem{\textbf{Current Coursework:} \textbf{AP} Calculus BC (equivalent to \textbf{Calculus II}), \textbf{AP} Physics C: Mechanics \& Electricity and Magnetism (equivalent to introductory \textbf{calculus-based physics}), \textbf{AP} Biology, \textbf{AP} World History: Modern, Chemistry Honors}
+             \cvSubItem{\textbf{Test scores:} \textbf{1450/1520} on the \textbf{PSAT 10}, \textbf{1410/1440} on the \textbf{PSAT 8/9}}
+        \cvListEnd
+\cvBodyEnd
+
+\section{Extracurriculars}
+\cvBodyStart
+    \cvTwo{\href{https://pbossev.pages.dev/extracurriculars/scioly/}{BHSN Science Olympiad}}{Sep 2022 \textbf{--} Present}
+        \cvListStart
+            \cvSubItem{Competed at the \textbf{state} level for the \textbf{'23} and \textbf{'24} seasons}
+            \cvSubItem{Notable placements: \textbf{1st} (at \textbf{Cybersecurity}) \& \textbf{2nd} (at \textbf{WIDI}, a communication-based event) at state, \textbf{2nd} (at 
+            \textbf{Astronomy}) \& \textbf{3rd} (at \textbf{WIDI}) at regionals, \textbf{12/151} at a national online invitational}
+        \cvListEnd
+    \cvThree{Monroe County High Ability Committee}{Nov 2022 \textbf{--} Present}{Monroe County Community School Corporation (MCCSC)}
+        \cvListStart
+            \cvSubItem{The steering committee of \textbf{MCCSC}'s \textbf{High Ability} Identification, Services, and Curriculum}
+            \cvSubItem{\textbf{First student} to \textbf{ever} be invited to the committee ($\mathbf{\sim25}$ members)}
+        \cvListEnd
+    \cvTwo{\href{https://pbossev.pages.dev/extracurriculars/field/}{BHSN Track and Field}}{Feb 2024 \textbf{--} Present}
+    \vspace{-10pt}
+    \cvTwo{BHSN Wrestling}{Nov 2023 \textbf{--} Dec 2023}
+    \vspace{-10pt}
+    \cvTwo{BHSN Math Club}{Aug 2022 \textbf{--} Present}
+    \vspace{-10pt}
+    \cvTwo{BHSN Math Team}{Mar 2024 \textbf{--} Present}
+    \vspace{-10pt}
+\cvBodyEnd
+
+\section{Awards \& Achievements}
+\cvRegListStart
+    \cvItem{\textbf{\href{https://www.aapt.org/physicsteam/PT-landing.cfm}{United States Physics Olympiad} (USAPhO) Qualifier, 2024}: Qualified through scoring in the top $\mathbf{500}$ nationally out of $\mathbf{\sim6000}$ participants}
+    \cvItem{\textbf{\href{https://www.nationalhonorsociety.org/}{National Honors Society} (NHS) member}: Inducted for demonstrating scholarship, service, leadership, and character}
+    \vspace{-10pt}
+\cvRegListEnd
+
+\section{Projects}
+\cvBodyStart
+    \cvTwo{Homemade Dry Ager}{Sep 2022 \textbf{--} Present}
+    \cvListStart
+        \cvSubItem{Repurposed wine cooler to maintain ideal conditions (temperature and humidity) for meat drying}
+        \cvSubItem{Used off-the-shelf \textbf{DC-DC Buck converters} for powering \textbf{Peltier} coolers, microcontroller logic, and fan power.}
+        \cvSubItem{Used off-the-shelf microcontrollers (\textbf{\href{https://www.arduino.cc/}{Arduino}} and \textbf{\href{https://en.wikipedia.org/wiki/NodeMCU}{NodeMCU ESP8266}}) for fully automated control logic and data transfer, with the \textbf{DHT22}, a Temperature/Humidity sensor}
+        \cvSubItem{Created a web interface to graph and monitor Temperature/Humidity conditions remotely (smartphone, PC, tablet)}
+    \cvListEnd
+    \cvTwo{Warframe Discord Bot}{Jan 2022 \textbf{--} Feb 2024}
+    \cvListStart
+        \cvSubItem{A Discord bot made with \textbf{Discord.js}, written in \textbf{Typescript}}
+        \cvSubItem{Allowed users to easily use bot commands to query Warframe data using the \textbf{Google Sheets API}}
+        \cvSubItem{Used by $\mathbf{\sim70}$ people over its lifetime, with $\mathbf{\sim90000}$ queries executed}
+    \cvListEnd
+    \cvTwo{\href{https://pbossev.pages.dev/projects/zweather/}{zWeather}}{Dec 2022}
+    \cvListStart
+        \cvSubItem{A mobile, utilitarian weather app utilizing \textbf{\href{https://flutter.dev/}{Flutter}}}
+        \cvSubItem{Featured an hourly, daily, and weekly forecast with toggle-able graphs, current weather metrics, such as temperature, dew point, snow/rainfall, wind metrics, etc}
+        \cvSubItem{Utilized \textbf{Open-Meteo's} weather \textbf{APIs} for getting weather info, and geocoding}
+    \cvListEnd
+    \cvTwo{\href{https://pbossev.pages.dev/}{pbossev.pages.dev}}{Dec 2023 \textbf{--} Present}
+    \cvListStart
+        \cvSubItem{A portfolio website made with \textbf{\href{https://www.11ty.dev/}{11ty}} and \textbf{\href{https://tailwindcss.com/}{TailwindCSS}}}
+    \cvListEnd
+\cvBodyEnd
+
+\section{Skills}
+\cvRegListStart
+    \cvItem{\textbf{Programming}: Linux, Git, Arduino, Typescript (NodeJS), Flutter/Dart, LaTeX, Python, HTML/CSS. }
+    \cvItem{\textbf{Languages}: English (native), Japanese (Elementary), Chinese (Elementary)}
+    \cvItem{\textbf{Typing speed}: 110 WPM}
+    \cvItem{Familiar with electronic testing equipment (oscilloscopes, multi-meters, function generators, etc.)}
+\cvRegListEnd
+
+\end{document}
